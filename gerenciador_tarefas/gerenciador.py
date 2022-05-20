@@ -1,7 +1,6 @@
-
 from fastapi import FastAPI
 
-# TAREFAS = [] 
+# TAREFAS = []
 TAREFAS = [
     {
         "id": "1",
@@ -26,9 +25,7 @@ TAREFAS = [
 
 app = FastAPI()
 
+
 @app.get("/tarefas")
 def listar():
     return TAREFAS
-
-
-
